@@ -1,1 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  font-family: Bebas Neue, "Times New Roman", Times, serif;
+  font-size: 70px;
+}
