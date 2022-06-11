@@ -25,12 +25,12 @@ window.onload = function() {
     let symbols = ["♦", "♥", "♠", "♣"];
     let symbol = symbols[Math.floor(Math.random() * symbols.length)];
 
-    if (symbol == "♥") {
+    if (symbol == "♥" || symbol == "♦") {
       symUp.style.color = "red";
       symDow.style.color = "red";
-    } else if (symbol == "♦") {
-      symUp.style.color = "red";
-      symDow.style.color = "red";
+    } else {
+      symUp.style.color = "black";
+      symDow.style.color = "black";
     }
     return symbol;
   }
@@ -38,7 +38,7 @@ window.onload = function() {
   let letter = document.querySelector("#midLetter");
   letter.innerHTML = randomCard();
   symUp.innerHTML = symDow.innerHTML = randomSymbol();
-};
 
-let button = document.querySelector(".btn");
-button.addEventListener("click", window.onload);
+  let button = document.querySelector(".btn");
+  button.addEventListener("click", window.onload);
+};
